@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sleep Outside | Home</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="divider" id="main-header"></header>
     <main class="divider">
       <div class="hero">
         <img
-          src="/images/banner-sm.jpg"
-          srcset="images/banner-sm.jpg 500w, images/banner.jpg"
+          src="./public/images/banner-sm.jpg"
+          srcset="
+            ./public/images/banner-sm.jpg 500w,
+            ./public/images/banner.jpg
+          "
           alt="image of a high mountain lake"
         />
         <div class="logo logo--square">
-          <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
+          <img
+            src="./public/images/noun_Tent_2517.svg"
+            alt="tent image for logo"
+          />
           <div>Sleep<span class="highlight">Outside</span></div>
         </div>
       </div>
@@ -30,10 +35,19 @@
           comfortably at an affordable price.
         </p>
       </section>
+
+      <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="newsletter-form">
+          <input type="email" id="email" name="email" placeholder="email@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
       <section class="products">
         <ul class="product-grid">
           <li>
-            <a href="product-listing/index.html?category=tents"
+            <a href="product-list/index.html?category=tents"
               ><img
                 src="images/category-icons/noun_Tent_3544767.svg"
                 alt="Tent Icon from Noun Project: Mustofa Bayu"
@@ -42,7 +56,7 @@
             </a>
           </li>
           <li>
-            <a href="product-listing/index.html?category=backpacks"
+            <a href="product-list/index.html?category=backpacks"
               ><img
                 src="images/category-icons/noun_carrier bag_3544771.svg"
                 alt="Backpack Icon from Noun Project: Mustofa Bayu"
@@ -51,7 +65,7 @@
             </a>
           </li>
           <li>
-            <a href="product-listing/index.html?category=sleeping-bags"
+            <a href="product-list/index.html?category=sleeping-bags"
               ><img
                 src="images/category-icons/noun_Sleeping Bag_3544775.svg"
                 alt="Sleeping Bag Icon from Noun Project: Mustofa Bayu"
@@ -60,7 +74,7 @@
             </a>
           </li>
           <li>
-            <a href="product-listing/index.html?category=hammocks"
+            <a href="product-list/index.html?category=hammocks"
               ><img
                 src="images/category-icons/noun_Hammock_791143.svg"
                 alt="Hammock Icon from Noun Project: Paul Richard"
@@ -70,7 +84,58 @@
           </li>
         </ul>
       </section>
+      <section class="products">
+        <h2>Top Products</h2>
+        <ul class="product-list">
+          <li class="product-card">
+            <a href="product_pages/index.html?product=880RR">
+              <img
+                src="./public/images/tents/marmot-ajax-tent-3-person-3-season-in-pale-pumpkin-terracotta~p~880rr_01~320.jpg"
+                alt="Marmot Ajax tent"
+              />
+              <h3 class="card__brand">Marmot</h3>
+              <h2 class="card__name">Ajax Tent - 3-Person, 3-Season</h2>
+              <p class="product-card__price">$199.99</p></a
+            >
+          </li>
+          <li class="product-card">
+            <a href="product_pages/index.html?product=985RF">
+              <img
+                src="./public/images/tents/the-north-face-talus-tent-4-person-3-season-in-golden-oak-saffron-yellow~p~985rf_01~320.jpg"
+                alt="Talus Tent - 4-Person, 3-Season"
+              />
+              <h3 class="card__brand">The North Face</h3>
+              <h2 class="card__name">Talus Tent - 4-Person, 3-Season</h2>
+              <p class="product-card__price">$199.99</p></a
+            >
+          </li>
+          <li class="product-card">
+            <a href="product_pages/index.html?product=985PR">
+              <img
+                src="./public/images/tents/the-north-face-alpine-guide-tent-3-person-4-season-in-canary-yellow-high-rise-grey~p~985pr_01~320.jpg"
+                alt="Alpine Guide Tent - 3-Person, 4-Season"
+              />
+              <h3 class="card__brand">The North Face</h3>
+              <h2 class="card__name">Alpine Guide Tent - 3-Person, 4-Season</h2>
+              <p class="product-card__price">$349.99</p></a
+            >
+          </li>
+          <li class="product-card">
+            <a href="product_pages/index.html?product=344YJ">
+              <img
+                src="./public/images/tents/cedar-ridge-rimrock-tent-2-person-3-season-in-rust-clay~p~344yj_01~320.jpg"
+                alt="Rimrock Tent - 2-Person, 3-Season"
+              />
+              <h3 class="card__brand">Cedar Ridge</h3>
+              <h2 class="card__name">Rimrock Tent - 2-Person, 3-Season</h2>
+              <p class="product-card__price">$69.99</p></a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <footer id="main-footer"></footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/newsletter.js"></script>
   </body>
 </html>

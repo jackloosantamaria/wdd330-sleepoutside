@@ -31,22 +31,18 @@ function convertToJson(res) {
   }
 }
 
-export default class ProductData {
-  constructor(category) {
-    // this.category = category;
-    // this.path = `../json/${this.category}.json`;
-  }
-  async getData(category) {
+
+  
+  export async function getData(category) {
     const response = await fetch(baseURL + `products/search/${category}`);
     console.log(response);
     const data = await convertToJson(response);
     console.log(data);
     return data.Result;
   }
-  async findProductById(id) {
+  export async function findProductById(id) {
     const response = await fetch(baseURL + `product/${id}`);
     const data = await convertToJson(response);
     
     return data.Result;
   }
-}
