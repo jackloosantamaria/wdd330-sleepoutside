@@ -1,6 +1,6 @@
-document.getElementById("newsletter-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = document.getElementById("email").value;
+// document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     const email = document.getElementById("email").value;
 
-    alert("Thank you for subscribing!");
-  });
+//     alert("Thank you for subscribing!");
+//   });

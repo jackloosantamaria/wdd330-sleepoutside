@@ -10,12 +10,16 @@
 
 // listing.init();
 
+//method #4
 
-import ProductList from "./ProductListing.mjs";
-import {loadHeaderFooter, getParam} from "./utils.mjs";
+// import ProductList from "./ProductListing.mjs";
+// import {loadHeaderFooter, getParam} from "./utils.mjs";
 
+
+// loadHeaderFooter();
+// const category = getParam("category");
+// ProductList(".product-list", category);
+
+import {loadHeaderFooter} from "./utils.mjs";
 
 loadHeaderFooter();
-const category = getParam("category");
-ProductList(".product-list", category);
-
