@@ -28,5 +28,25 @@ export default class ShoppingCart {
     const cartItems = getLocalStorage(this.key);
     const htmlItems = cartItems.map((item) => cartItemTemplate(item));
     document.querySelector(this.parentSelector).innerHTML = htmlItems.join("");
+
+    if (cartItems.length > 0) {
+      const total = calculateTotal(cartItems);
+      showTotal(total);
+    }    
   }
+}
+
+function calculateTotal(cartItems) {
+  let total = 0;
+  for (const item of cartItems) {
+  total += item.FinalPrice;
+  }
+  return total.toFixed(2); // Round the total to two decimal places
+}
+
+function showTotal(total) {
+  const cartFooter = document.querySelector('.cart-footer');
+  cartFooter.classList.remove('hide'); // Show the total if there are items in the cart
+  const cartTotalElement = document.querySelector('.cart-total');
+  cartTotalElement.textContent = `Total: $${total}`;
 }
