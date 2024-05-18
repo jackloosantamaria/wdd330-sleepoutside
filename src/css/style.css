@@ -89,6 +89,7 @@ button {
   display: block;
   border: 0;
   font-size: var(--large-font);
+  margin-top: 15px;
 }
 .divider {
   border-bottom: 2px solid var(--primary-color);
@@ -297,6 +298,50 @@ button {
 }
 .alert > p {
   margin: 0;
+}
+
+/*Subscribe*/
+
+.newsletter {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+#newsletter-form {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: #0056b3;
+}
+
+.cart-quantity-input {
+  width: 50px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 500px) {
